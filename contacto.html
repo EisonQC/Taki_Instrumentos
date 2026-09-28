@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto &mdash; Taki Instrumentos Musicales</title>
+  <meta name="description" content="Escríbenos para consultas, pedidos o cotizaciones de instrumentos musicales andinos y modernos.">
+  <meta name="author" content="Eddi Quispe">
+  <link rel="icon" type="image/svg+xml" href="svg/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@500;700&family=Mulish:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav-bar">
+      <a href="index.html" class="brand">
+        <img src="svg/favicon.svg" alt="Logotipo Taki Instrumentos">
+        Taki Instrumentos
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="contacto.html" class="activa">Contacto</a></li>
+      </ul>
+      <button type="button" id="abrir-carrito" class="carrito-btn" aria-haspopup="true">
+        🛒 Carrito <span class="carrito-badge" hidden>0</span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <h1 class="section-title">Escríbenos</h1>
+        <p class="section-sub">Cuéntanos qué instrumento buscas o resuélvenos tus dudas; te respondemos en menos de 24 horas.</p>
+
+        <div id="resumen-pedido" class="resumen-pedido"></div>
+
+        <form class="form-wrap" action="#" method="post">
+          <input type="hidden" id="codigo-pedido" name="codigo_pedido">
+
+          <div class="campo-fila">
+            <div class="campo">
+              <label for="nombre">Nombre completo</label>
+              <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+            </div>
+            <div class="campo">
+              <label for="correo">Correo electrónico</label>
+              <input type="email" id="correo" name="correo" placeholder="tucorreo@ejemplo.com" required>
+            </div>
+          </div>
+
+          <div class="campo-fila">
+            <div class="campo">
+              <label for="telefono">Teléfono / WhatsApp</label>
+              <input type="tel" id="telefono" name="telefono" placeholder="+51 9XX XXX XXX">
+            </div>
+            <div class="campo">
+              <label for="fecha">Fecha preferida de contacto</label>
+              <input type="date" id="fecha" name="fecha">
+            </div>
+          </div>
+
+          <div class="campo">
+            <label for="instrumento">Instrumento de tu interés</label>
+            <select id="instrumento" name="instrumento" required>
+              <option value="">Selecciona una opción</option>
+              <option value="charango">Charango</option>
+              <option value="quena">Quena</option>
+              <option value="zampona">Zampoña</option>
+              <option value="bombo">Bombo legüero</option>
+              <option value="guitarra">Guitarra acústica</option>
+              <option value="teclado">Teclado digital</option>
+              <option value="otro">Otro / no estoy seguro</option>
+            </select>
+          </div>
+
+          <fieldset>
+            <legend>Motivo de tu consulta</legend>
+            <div class="radio-opciones">
+              <label><input type="radio" name="motivo" value="compra" checked> Compra</label>
+              <label><input type="radio" name="motivo" value="reparacion"> Reparación</label>
+              <label><input type="radio" name="motivo" value="clases"> Clases</label>
+              <label><input type="radio" name="motivo" value="otro"> Otro</label>
+            </div>
+          </fieldset>
+
+          <div class="campo">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuéntanos con más detalle qué necesitas" required></textarea>
+          </div>
+
+          <div class="campo">
+            <label><input type="checkbox" name="acepto" required> Acepto ser contactado por Taki Instrumentos por correo o teléfono.</label>
+          </div>
+
+          <button type="submit" class="enviar-btn">Enviar consulta</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="container">
+        <h2 class="section-title">Horario de atención</h2>
+        <div class="table-wrap">
+          <table>
+            <caption>Días y horas en que puedes visitarnos o llamarnos</caption>
+            <thead>
+              <tr>
+                <th scope="col">Día</th>
+                <th scope="col">Mañana</th>
+                <th scope="col">Tarde</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Lunes a viernes</th>
+                <td>9:00 a. m. &ndash; 1:00 p. m.</td>
+                <td>3:00 p. m. &ndash; 7:00 p. m.</td>
+              </tr>
+              <tr>
+                <th scope="row">Sábado</th>
+                <td>9:00 a. m. &ndash; 1:00 p. m.</td>
+                <td>3:00 p. m. &ndash; 5:00 p. m.</td>
+              </tr>
+              <tr>
+                <th scope="row">Domingo</th>
+                <td colspan="2">Cerrado</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <address style="text-align:center; margin-top:2rem; font-style: normal;">
+          Jr. Los Andes 245, Huancavelica, Perú &middot;
+          <a href="mailto:contacto@takiinstrumentos.pe">contacto@takiinstrumentos.pe</a>
+        </address>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Taki Instrumentos Musicales &middot; Huancavelica, Perú</p>
+    <p><a href="catalogo.html">Ver catálogo</a> &middot; Página elaborada con fines académicos.</p>
+  </footer>
+
+  <div id="carrito-fondo" class="carrito-fondo"></div>
+  <aside id="carrito-panel" class="carrito-panel" aria-hidden="true">
+    <div class="carrito-cabecera">
+      <h2>Tu carrito</h2>
+      <button type="button" id="cerrar-carrito" class="carrito-cerrar" aria-label="Cerrar carrito">&times;</button>
+    </div>
+    <p id="carrito-vacio">Tu carrito está vacío.</p>
+    <ul id="carrito-lista" class="carrito-lista"></ul>
+    <div class="carrito-resumen">
+      <p class="carrito-resumen-linea"><span>Total</span> <span id="carrito-total">S/ 0.00</span></p>
+      <p id="carrito-cuotas" class="carrito-cuotas"></p>
+      <p class="carrito-puntos">Puntos Taki ganados: <span id="puntos-taki">0</span></p>
+      <a href="catalogo.html" class="cta" style="display:block; text-align:center;">Seguir comprando</a>
+    </div>
+  </aside>
+
+  <div id="toast-contenedor" class="toast-contenedor"></div>
+  <button type="button" id="volver-arriba" class="volver-arriba" aria-label="Volver arriba">&uarr;</button>
+
+  <div id="cargando">
+    <img src="svg/onda-sonora.svg" alt="Cargando" style="width:80px;">
+  </div>
+
+  <script src="js/app.js" defer></script>
+</body>
+</html>

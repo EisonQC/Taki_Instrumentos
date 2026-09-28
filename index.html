@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taki Instrumentos Musicales &mdash; Andinos y modernos</title>
+  <meta name="description" content="Tienda de instrumentos musicales andinos y modernos: charangos, quenas, zampoñas, bombos, guitarras y teclados.">
+  <meta name="author" content="Eddi Quispe">
+  <meta name="keywords" content="instrumentos musicales, charango, quena, zampoña, bombo, guitarra, teclado, tienda musical">
+  <link rel="icon" type="image/svg+xml" href="svg/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@500;700&family=Mulish:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav-bar">
+      <a href="index.html" class="brand">
+        <img src="svg/favicon.svg" alt="Logotipo Taki Instrumentos">
+        Taki Instrumentos
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="activa">Inicio</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+      <button type="button" id="abrir-carrito" class="carrito-btn" aria-haspopup="true">
+        🛒 Carrito <span class="carrito-badge" hidden>0</span>
+      </button>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero-text">
+        <h1>Instrumentos que cargan siglos de sonido andino</h1>
+        <p class="hero-lead">En Taki encuentras charangos, quenas, zampoñas y bombos construidos por artesanos, junto a guitarras y teclados para quienes están dando sus primeros acordes.</p>
+        <a href="catalogo.html" class="cta">Ver catálogo</a>
+        <div class="destacados-rotativos">
+          <span class="destacado-frase">Envíos a todo Huancavelica</span>
+          <span class="destacado-frase">Artesanos locales certificados</span>
+          <span class="destacado-frase">Paga tu instrumento en cuotas</span>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <img src="img/charango-peruano.jpg" alt="Charango andino de cuerdas, instrumento insignia de la tienda">
+        <img class="onda-sonora" src="svg/onda-sonora.svg" alt="Animación decorativa de ecualizador de sonido">
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <section class="section" id="quienes-somos">
+      <div class="container">
+        <h2 class="section-title">Quiénes somos</h2>
+        <p class="section-sub">Una tienda pensada para músicos de la sierra central del Perú, entre lo tradicional y lo contemporáneo.</p>
+
+        <div class="cards-grid">
+          <figure class="info-card">
+            <img src="img/charangos.jpg" alt="Feria de venta de charangos artesanales">
+            <figcaption>Trabajamos con luthiers que aún fabrican charangos de forma artesanal.</figcaption>
+          </figure>
+          <div class="info-card">
+            <h3>Nuestra historia</h3>
+            <p>Taki nació como un pequeño taller de reparación de instrumentos de cuerda en Huancavelica. Hoy combinamos instrumentos andinos hechos a mano con marcas reconocidas de guitarras y teclados.</p>
+            <img src="img/Taller.jpg" alt="Nuestro taller en Huancavelica">
+          </div>
+          <div class="info-card">
+            <h3>Nuestro compromiso</h3>
+            <p>Cada instrumento andino que vendemos proviene de talleres familiares de la región, apoyando a artesanos locales y difundiendo la música tradicional entre nuevas generaciones.</p>
+            <img src="img/taller2.jpg" alt="Compromiso con nuestros artesanos">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="destacados">
+      <div class="container">
+        <h2 class="section-title">Lo más buscado</h2>
+        <p class="section-sub">Una muestra rápida de nuestro catálogo; revisa todos los detalles y precios en la sección Catálogo.</p>
+
+        <div class="product-grid">
+          <article class="product-card" data-id="charango" data-nombre="Charango de diez cuerdas" data-categoria="Andino">
+            <div class="product-media">
+              <img src="img/charango_h.jpg" alt="Charango de diez cuerdas">
+            </div>
+            <div class="product-body">
+              <span class="badge">Andino</span>
+              <h3>Charango de diez cuerdas</h3>
+              <p>Caja de resonancia en madera laminada, ideal para principiantes.</p>
+              <span class="price-tag">S/ 380.00</span>
+              <button type="button" class="agregar-carrito">Agregar al carrito</button>
+            </div>
+          </article>
+          <article class="product-card" data-id="quena" data-nombre="Quena de caña" data-categoria="Andino">
+            <div class="product-media">
+              <img src="img/quena2.jpg" alt="Quena de caña">
+            </div>
+            <div class="product-body">
+              <span class="badge">Andino</span>
+              <h3>Quena de caña</h3>
+              <p>Afinación estándar en Sol, seis orificios frontales y uno posterior.</p>
+              <span class="price-tag">S/ 65.00</span>
+              <button type="button" class="agregar-carrito">Agregar al carrito</button>
+            </div>
+          </article>
+          <article class="product-card" data-id="guitarra" data-nombre="Guitarra acústica" data-categoria="Moderno">
+            <div class="product-media">
+              <img src="img/F335.png" alt="Guitarra acústica">
+            </div>
+            <div class="product-body">
+              <span class="badge">Moderno</span>
+              <h3>Guitarra acústica</h3>
+              <p>Cuerdas de acero, cuerpo dreadnought, perfecta para iniciarse.</p>
+              <span class="price-tag">S/ 450.00</span>
+              <button type="button" class="agregar-carrito">Agregar al carrito</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Taki Instrumentos Musicales &middot; Huancavelica, Perú</p>
+    <p><a href="contacto.html">Escríbenos</a> &middot; Páginas @EddiQC con fines educativos.</p>
+  </footer>
+
+  <div id="carrito-fondo" class="carrito-fondo"></div>
+  <aside id="carrito-panel" class="carrito-panel" aria-hidden="true">
+    <div class="carrito-cabecera">
+      <h2>Tu carrito</h2>
+      <button type="button" id="cerrar-carrito" class="carrito-cerrar" aria-label="Cerrar carrito">&times;</button>
+    </div>
+    <p id="carrito-vacio">Tu carrito está vacío.</p>
+    <ul id="carrito-lista" class="carrito-lista"></ul>
+    <div class="carrito-resumen">
+      <p class="carrito-resumen-linea"><span>Total</span> <span id="carrito-total">S/ 0.00</span></p>
+      <p id="carrito-cuotas" class="carrito-cuotas"></p>
+      <p class="carrito-puntos">Puntos Taki ganados: <span id="puntos-taki">0</span></p>
+      <a href="contacto.html" class="cta" style="display:block; text-align:center;">Finalizar pedido</a>
+    </div>
+  </aside>
+
+  <div id="toast-contenedor" class="toast-contenedor"></div>
+  <button type="button" id="volver-arriba" class="volver-arriba" aria-label="Volver arriba">&uarr;</button>
+
+  <div id="cargando">
+    <img src="svg/onda-sonora.svg" alt="Cargando" style="width:80px;">
+  </div>
+
+  <script src="js/app.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo &mdash; Taki Instrumentos Musicales</title>
+  <meta name="description" content="Catálogo de instrumentos andinos y modernos: charango, quena, zampoña, bombo, guitarra y teclado, con precios.">
+  <meta name="author" content="Eddi Quispe">
+  <link rel="icon" type="image/svg+xml" href="svg/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@500;700&family=Mulish:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav-bar">
+      <a href="index.html" class="brand">
+        <img src="svg/favicon.svg" alt="Logotipo Taki Instrumentos">
+        Taki Instrumentos
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="catalogo.html" class="activa">Catálogo</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+      <button type="button" id="abrir-carrito" class="carrito-btn" aria-haspopup="true">
+        🛒 Carrito <span class="carrito-badge" hidden>0</span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="section">
+      <div class="container">
+        <h1 class="section-title">Conoce las partes del charango</h1>
+        <p class="section-sub">Toca cada zona de la imagen para saber más sobre esa parte del instrumento.</p>
+
+        <div class="map-wrap">
+          <img src="img/Pcharango.jpg"
+               alt="Charango andino visto de frente, con zonas interactivas sobre sus partes"
+               usemap="#mapa-charango" width="360" height="540">
+          <map name="mapa-charango">
+            <area shape="rect" coords="140,5,220,55" href="#parte-clavijero" alt="Clavijero" title="Clavijero">
+            <area shape="rect" coords="155,55,205,225" href="#parte-mastil" alt="Mástil" title="Mástil">
+            <area shape="rect" coords="170,225,190,420" href="#parte-cuerdas" alt="Cuerdas" title="Cuerdas">
+            <area shape="rect" coords="45,225,315,525" href="#parte-caja" alt="Caja de resonancia" title="Caja de resonancia">
+          </map>
+        </div>
+
+        <ul class="partes-lista">
+          <li id="parte-clavijero"><span>Clavijero</span> Sostiene las diez clavijas que tensan las cinco cuerdas dobles del charango y permiten afinarlo.</li>
+          <li id="parte-mastil"><span>Mástil</span> Une el clavijero con la caja de resonancia; sobre él se ubican los trastes donde se pisan las notas.</li>
+          <li id="parte-cuerdas"><span>Cuerdas</span> Cinco pares de cuerdas, tradicionalmente de nylon, afinadas en la escala característica del charango.</li>
+          <li id="parte-caja"><span>Caja de resonancia</span> Originalmente construida con el caparazón de un quirquincho; hoy la mayoría se fabrica en madera laminada por razones de conservación.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="container">
+        <h2 class="section-title">Nuestro catálogo</h2>
+        <p class="section-sub">Instrumentos andinos hechos por artesanos de la región y equipo moderno para complementar tu práctica.</p>
+
+        <div class="buscador-wrap">
+          <label for="buscador" class="campo label-oculta">Buscar instrumento</label>
+          <input type="search" id="buscador" placeholder="Buscar por nombre o categoría (ej. andino, quena)...">
+        </div>
+        <p id="sin-resultados" hidden>No encontramos instrumentos con ese término.</p>
+
+        <div class="product-grid">
+
+          <article class="product-card" data-id="charango" data-nombre="Charango de diez cuerdas" data-categoria="Andino">
+            <picture class="product-media">
+              <source media="(max-width: 480px)" srcset="img/charango.jpg 300w">
+              <img src="img/charango10.jpg"
+                   srcset="img/charango10.jpg 300w,
+                           img/charango10.jpg 600w"
+                   sizes="(max-width: 480px) 300px, 600px"
+                   alt="Charango andino de diez cuerdas">
+            </picture>
+            <div class="product-body">
+              <span class="badge">Andino</span>
+              <h3>Charango de diez cuerdas</h3>
+              <p>Tapa en madera de pino, cuerpo abombado, incluye funda básica.</p>
+              <span class="price-tag">S/ 380.00</span>
+            <button type="button" class="agregar-carrito">Agregar al carrito</button>
+            </div>
+          </article>
+
+          <article class="product-card" data-id="quena" data-nombre="Quena de caña" data-categoria="Andino">
+            <picture class="product-media">
+              <img src="img/quena.jpg"
+                   srcset="img/quena.jpg 300w,
+                           img/quena.jpg 600w"
+                   sizes="(max-width: 480px) 300px, 600px"
+                   alt="Quena de caña, flauta andina">
+            </picture>
+            <div class="product-body">
+              <span class="badge">Andino</span>
+              <h3>Quena de caña</h3>
+              <p>Afinación en Sol, seis orificios frontales y uno posterior para el pulgar.</p>
+              <span class="price-tag">S/ 65.00</span>
+            <button type="button" class="agregar-carrito">Agregar al carrito</button>
+            </div>
+          </article>
+
+          <article class="product-card" data-id="zampona" data-nombre="Zampoña (siku)" data-categoria="Andino">
+            <picture class="product-media">
+              <img src="img/zampoña2.jpg"
+                   srcset="img/zampoña2.jpg 300w,
+                           img/zampoña2.jpg 600w"
+                   sizes="(max-width: 480px) 300px, 600px"
+                   alt="Zampoña de caña, doble hilera de tubos">
+            </picture>
+            <div class="product-body">
+              <span class="badge">Andino</span>
+              <h3>Zampoña (siku)</h3>
+              <p>Par de hileras &mdash; arca e ira &mdash; para tocar en dúo o en solitario.</p>
+              <span class="price-tag">S/ 55.00</span>
+            <button type="button" class="agregar-carrito">Agregar al carrito</button>
+            </div>
+          </article>
+
+          <article class="product-card" data-id="bombo" data-nombre="Bombo legüero" data-categoria="Andino">
+            <picture class="product-media">
+              <img src="img/bombo.jpg"
+                   srcset="img/bombo.jpg 300w,
+                           img/bombo.jpg 600w"
+                   sizes="(max-width: 480px) 300px, 600px"
+                   alt="Bombo legüero de cuero">
+            </picture>
+            <div class="product-body">
+              <span class="badge">Andino</span>
+              <h3>Bombo legüero</h3>
+              <p>Parches de cuero curtido sobre cuerpo de madera ahuecada.</p>
+              <span class="price-tag">S/ 420.00</span>
+            <button type="button" class="agregar-carrito">Agregar al carrito</button>
+            </div>
+          </article>
+
+          <article class="product-card" data-id="guitarra" data-nombre="Guitarra acústica" data-categoria="Moderno">
+            <picture class="product-media">
+              <img src="img/A_guitar.jpg"
+                   srcset="img/A_guitar.jpg 300w,
+                           img/A_guitar.jpg 600w"
+                   sizes="(max-width: 480px) 300px, 600px"
+                   alt="Guitarra acústica de cuerdas de acero">
+            </picture>
+            <div class="product-body">
+              <span class="badge">Moderno</span>
+              <h3>Guitarra acústica</h3>
+              <p>Cuerpo dreadnought, cuerdas de acero, ideal para iniciarse.</p>
+              <span class="price-tag">S/ 450.00</span>
+            <button type="button" class="agregar-carrito">Agregar al carrito</button>
+            </div>
+          </article>
+
+          <article class="product-card" data-id="teclado" data-nombre="Teclado digital 88 teclas" data-categoria="Moderno">
+            <picture class="product-media">
+              <img src="img/teclado.jpg"
+                   srcset="img/teclado.jpg 300w,
+                           img/teclado.jpg 600w"
+                   sizes="(max-width: 480px) 300px, 600px"
+                   alt="Teclado digital de 88 teclas">
+            </picture>
+            <div class="product-body">
+              <span class="badge">Moderno</span>
+              <h3>Teclado digital 88 teclas</h3>
+              <p>Teclado sensible al toque, ideal para práctica y grabación en casa.</p>
+              <span class="price-tag">S/ 1450.00</span>
+            <button type="button" class="agregar-carrito">Agregar al carrito</button>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Cuadro comparativo</h2>
+        <div class="table-wrap">
+          <table>
+            <caption>Resumen de instrumentos, origen y nivel de dificultad recomendado</caption>
+            <thead>
+              <tr>
+                <th scope="col">Instrumento</th>
+                <th scope="col">Categoría</th>
+                <th scope="col">Origen</th>
+                <th scope="col">Dificultad</th>
+                <th scope="col">Precio</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Charango</th>
+                <td>Cuerda andina</td>
+                <td>Altiplano andino</td>
+                <td>Media</td>
+                <td>S/ 380.00</td>
+              </tr>
+              <tr>
+                <th scope="row">Quena</th>
+                <td>Viento andina</td>
+                <td>Perú y Bolivia</td>
+                <td>Media&ndash;alta</td>
+                <td>S/ 65.00</td>
+              </tr>
+              <tr>
+                <th scope="row">Zampoña</th>
+                <td>Viento andina</td>
+                <td>Altiplano andino</td>
+                <td>Alta</td>
+                <td>S/ 55.00</td>
+              </tr>
+              <tr>
+                <th scope="row">Bombo legüero</th>
+                <td>Percusión</td>
+                <td>Región andina sur</td>
+                <td>Baja</td>
+                <td>S/ 420.00</td>
+              </tr>
+              <tr>
+                <th scope="row">Guitarra acústica</th>
+                <td>Cuerda moderna</td>
+                <td>Internacional</td>
+                <td>Baja&ndash;media</td>
+                <td>S/ 450.00</td>
+              </tr>
+              <tr>
+                <th scope="row">Teclado digital</th>
+                <td>Teclado moderno</td>
+                <td>Internacional</td>
+                <td>Media</td>
+                <td>S/ 1450.00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>Taki Instrumentos Musicales &middot; Huancavelica, Perú</p>
+    <p><a href="contacto.html">Escríbenos</a> &middot; Páginas @EddiQC con fines educativos.</p>
+  </footer>
+
+  <div id="carrito-fondo" class="carrito-fondo"></div>
+  <aside id="carrito-panel" class="carrito-panel" aria-hidden="true">
+    <div class="carrito-cabecera">
+      <h2>Tu carrito</h2>
+      <button type="button" id="cerrar-carrito" class="carrito-cerrar" aria-label="Cerrar carrito">&times;</button>
+    </div>
+    <p id="carrito-vacio">Tu carrito está vacío.</p>
+    <ul id="carrito-lista" class="carrito-lista"></ul>
+    <div class="carrito-resumen">
+      <p class="carrito-resumen-linea"><span>Total</span> <span id="carrito-total">S/ 0.00</span></p>
+      <p id="carrito-cuotas" class="carrito-cuotas"></p>
+      <p class="carrito-puntos">Puntos Taki ganados: <span id="puntos-taki">0</span></p>
+      <a href="contacto.html" class="cta" style="display:block; text-align:center;">Finalizar pedido</a>
+    </div>
+  </aside>
+
+  <div id="toast-contenedor" class="toast-contenedor"></div>
+  <button type="button" id="volver-arriba" class="volver-arriba" aria-label="Volver arriba">&uarr;</button>
+
+  <div id="cargando">
+    <img src="svg/onda-sonora.svg" alt="Cargando" style="width:80px;">
+  </div>
+
+  <script src="js/app.js" defer></script>
+</body>
+</html>
